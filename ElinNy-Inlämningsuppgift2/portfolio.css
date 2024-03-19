@@ -1,0 +1,529 @@
+/* Elin Ny */
+@font-face {
+  font-family: "Gruppo";
+  src: url(Gruppo/Gruppo-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: rgb(181, 183, 185);
+}
+body {
+  font-family: "Gruppo";
+}
+li {
+  list-style: none;
+  text-align: center;
+}
+#header {
+  background-color: rgb(195, 215, 231);
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  padding: 0 3rem;
+}
+#navBar {
+  display: flex;
+  align-content: center;
+  margin: 0.625rem;
+}
+.navBarClass {
+  color: rgb(35, 81, 93);
+  text-decoration: none;
+  border: 1px solid rgb(35, 81, 93);
+  border-radius: 0.3rem;
+  margin-right: 0.625rem;
+  padding: 0.1rem 0.2rem;
+}
+.navBarClass:hover {
+  background-color: rgb(208, 208, 208);
+  color: rgb(35, 81, 93);
+}
+.navBarClass:active {
+  background-color: rgb(208, 208, 208);
+  color: rgba(210, 100, 230, 0.601);
+}
+#logo {
+  width: 30vw;
+}
+#logoId {
+  align-self: flex-start;
+}
+main {
+  background-color: rgba(181, 183, 185, 0.641);
+}
+#hero {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.212),
+      rgba(92, 59, 19, 0.651)
+    ),
+    url("images/elintablet.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 70vw;
+  height: 70vw;
+  background-position: top;
+  margin: 1rem auto;
+  border-radius: 100%;
+  border: 2px solid rgba(210, 100, 230, 0.601);
+  margin-top: 6rem;
+}
+#mainH2Id {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+}
+#mainH1 {
+  color: rgb(208, 208, 208);
+  font-size: large;
+  margin: 0 rem;
+}
+#mainH2 {
+  color: rgb(208, 208, 208);
+}
+#h2Id {
+  color: rgb(227, 173, 237);
+  text-decoration: underline;
+  margin-bottom: 0.625rem;
+}
+#h2Id:hover {
+  background-color: rgb(227, 173, 237);
+  color: rgb(35, 81, 93);
+}
+h3 {
+  color: rgba(92, 59, 19, 0.651);
+  text-align: center;
+}
+.info {
+  background-color: rgba(95, 69, 43, 0.525);
+  color: rgb(208, 208, 208);
+  width: 100vw;
+  border: 3px solid rgba(211, 100, 230, 0.488);
+}
+#infoId {
+  background-color: rgb(195, 215, 231);
+  color: rgb(35, 81, 93);
+  width: 100vw;
+}
+p {
+  width: 50vw;
+}
+article {
+  width: 100vw;
+  padding: 0.625rem;
+  height: auto;
+}
+.skillH {
+  color: rgb(35, 81, 93);
+  margin-top: 2rem;
+  margin-bottom: 0.625rem;
+}
+.evenSkills,
+.oddSkills {
+  text-align: center;
+}
+.skillsEven,
+.skillsOdd {
+  margin: 0.625rem;
+}
+.oddP,
+.evenP {
+  margin: auto;
+}
+.blogH {
+  color: rgb(208, 208, 208);
+}
+#blogArticles {
+  width: 100vw;
+  background-color: rgba(95, 69, 43, 0.525);
+  color: rgb(208, 208, 208);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+#art1 {
+  grid-row: 1;
+  grid-column: 1/2;
+}
+#art2 {
+  grid-row: 2;
+  grid-column: 1/2;
+}
+#art3 {
+  grid-row: 3;
+  grid-column: 1/2;
+}
+#art4 {
+  grid-row: 4;
+  grid-column: 1/2;
+}
+#blogHeading {
+  text-align: center;
+  color: rgb(35, 81, 93);
+  border: 4px groove rgba(210, 100, 230, 0.601);
+}
+.blogH {
+  text-align: center;
+}
+.blogPic {
+  margin: 0.625rem;
+  justify-content: center;
+}
+.bildP {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.katBlogs {
+  width: 10vw;
+  color: rgb(195, 215, 231);
+  line-height: 3rem;
+}
+.artClass:visited {
+  color: rgb(208, 208, 208);
+  text-decoration: none;
+}
+.artClass:link {
+  color: rgb(208, 208, 208);
+  text-decoration: none;
+}
+hr {
+  width: 90vw;
+  margin: auto;
+  border: 0.1rem groove rgba(195, 215, 231, 0.538);
+}
+aside {
+  display: none;
+}
+form {
+  text-align: center;
+}
+fieldset {
+  margin: auto;
+  width: 40vw;
+  height: 20vh;
+}
+#contactText {
+  background-color: rgba(211, 100, 230, 0.344);
+  color: rgb(208, 208, 208);
+  margin-top: 0.625rem;
+  text-align: center;
+  width: 30vw;
+}
+.contact {
+  background-color: rgba(211, 100, 230, 0.344);
+  border: 1px solid rgba(92, 13, 90, 0.382);
+}
+footer {
+  width: 100vw;
+  font-size: small;
+  background-color: rgb(35, 81, 93);
+  color: rgb(208, 208, 208);
+}
+.footerP {
+  width: 100vw;
+  text-align: center;
+}
+/*
+
+*Här kommer första brytpunkten som är för tablets*
+
+*/
+@media screen and (min-width: 450px) and (max-width: 900px) {
+  #header {
+    width: 100vw;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  #logo {
+    width: auto;
+    height: 3rem;
+  }
+  #hero {
+    height: 60vw;
+    margin: 3rem auto;
+    border-radius: 0%;
+  }
+  #mainH2Id {
+    background-color: rgba(126, 210, 231, 0.273);
+    width: 100%;
+  }
+  #mainH1 {
+    font-size: 2rem;
+  }
+  section {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgba(181, 183, 185, 0.641);
+  }
+  .oddSkills {
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+  }
+  .evenSkills {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: justify;
+  }
+  .bildP {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  hr {
+    width: 65vw;
+    float: left;
+    border: 0.1rem groove rgba(195, 215, 231, 0.538);
+  }
+}
+/*
+
+*Här kommer andra brytpunkten som är för desktop*
+
+*/
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  #header {
+    height: 3rem;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  #logo {
+    height: 3rem;
+    width: auto;
+  }
+  #hero {
+    align-items: flex-end;
+    height: 60vw;
+    background-position: bottom;
+    margin: 1rem auto;
+    border-radius: 0%;
+    border: 0;
+  }
+  #mainH1 {
+    color: rgba(210, 100, 230, 0.601);
+    font-size: 4rem;
+    position: relative;
+    right: 4rem;
+    margin-right: 1rem;
+  }
+  #h2Id {
+    text-decoration: none;
+    border: 1px solid rgb(195, 215, 231);
+    border-radius: 4px;
+    width: 10vw;
+  }
+  #infos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  #infoId {
+    width: 40vw;
+    border-radius: 1rem;
+    background-color: rgb(208, 208, 208);
+    border: 3px dotted rgba(210, 100, 230, 0.601);
+    padding: 0.625rem;
+  }
+  .info {
+    width: 40vw;
+    border-radius: 1rem;
+    background-color: rgb(208, 208, 208);
+    color: rgb(35, 81, 93);
+    justify-content: center;
+    border: 3px dotted rgba(210, 100, 230, 0.601);
+    padding: 0.625rem;
+  }
+  section {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgba(181, 183, 185, 0.641);
+  }
+  .oddSkills {
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+  }
+  .evenSkills {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: justify;
+  }
+  .bildP {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  p {
+    width: 50vw;
+  }
+  hr {
+    width: 65vw;
+    float: left;
+    border: 0.1rem groove rgba(195, 215, 231, 0.538);
+  }
+  aside {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    background-color: rgba(35, 81, 93, 0.59);
+    border: 3px groove rgb(208, 208, 208);
+    width: 10vw;
+    height: 55%;
+    grid-column: 2/3;
+    grid-row: 1/5;
+    position: relative;
+    right: 11.1em;
+    border-radius: 1rem;
+  }
+}
+
+/*
+
+Här är den tredje brytpunkten för large desktop
+
+*/
+@media screen and (min-width: 1201px) {
+  #header {
+    background-image: url(images/hellahead.png);
+    /* background-size: cover; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+  }
+  #navBar {
+    height: 12vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .navBarLi {
+    width: 10vw;
+  }
+
+  #logo {
+    display: none;
+  }
+  #hero {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.212),
+        rgba(92, 59, 19, 0.651)
+      ),
+      url("images/elin.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(211, 100, 230, 0.177);
+    width: 40vw;
+    box-shadow: 1rem 3rem 10rem rgba(95, 69, 43, 0.525);
+    height: 40vw;
+    background-position: bottom;
+    margin: 2rem auto;
+    margin-top: 7rem;
+    border-radius: 0%;
+  }
+  #mainH2Id {
+    background-color: rgba(126, 210, 231, 0.273);
+    width: 100%;
+  }
+  #mainH1 {
+    font-size: 3rem;
+    margin: 0rem;
+  }
+  #infos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0.625rem;
+    justify-items: center;
+  }
+  .info {
+    width: 33vw;
+    background-color: rgba(195, 215, 231, 0.462);
+    color: rgb(35, 81, 93);
+    border: 1px dashed rgb(35, 81, 93);
+    justify-self: center;
+  }
+  #infoId {
+    width: 33vw;
+    background-color: rgba(211, 100, 230, 0.177);
+    border-top: 1px dashed rgb(35, 81, 93);
+    border-bottom: 1px dashed rgb(35, 81, 93);
+  }
+  section {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgba(181, 183, 185, 0.641);
+  }
+  .oddSkills {
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+  }
+  .evenSkills {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: justify;
+  }
+  p {
+    width: 50vw;
+  }
+  hr {
+    width: 65vw;
+    float: left;
+    border: 0.1rem groove rgba(195, 215, 231, 0.538);
+  }
+  .bildP {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  aside {
+    display: flex;
+    align-self: center;
+    background-color: rgba(35, 81, 93, 0.59);
+    border: 3px groove rgb(208, 208, 208);
+    width: 10vw;
+    height: 55%;
+    grid-column: 2/3;
+    grid-row: 1/5;
+    position: relative;
+    right: 11.1em;
+    border-radius: 1rem;
+  }
+}
